@@ -1,0 +1,22 @@
+<!--interpolation string( data binding proprety) -->
+<h1>{{title}}</h1>
+<button (click)="count()">count</button>
+<h1>{{countNum}}</h1>
+
+<button (click)="discount()" class="btn btn-primary">discount</button>
+<h1>{{discountNum}}</h1>
+
+<!-- Data binding proprety -->
+<div [style.backgroundColor]="color">Helloo</div>
+<br>
+
+
+Nom:{{nom}}<br>
+Username:{{username}}<hr><hr>
+
+<div>
+  <app-carte-visit></app-carte-visit>
+</div>
+<app-carte-visit  [data]="color"  (valuechanged)="showValue($event)"></app-carte-visit>
+<h1>{{result}}</h1>
+

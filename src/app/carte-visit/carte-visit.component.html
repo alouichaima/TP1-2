@@ -1,0 +1,33 @@
+
+<form (ngSubmit)="onSubmit()">
+  <label for="nom">Nom:</label>
+  <input type="text" id="nom" name="nom" [(ngModel)]="carteVisite.nom"><br>
+  <label for="prenom">Prenom:</label>
+  <input type="text" id="prrenom" name="prenom" [(ngModel)]="carteVisite.prenom"><br>
+  <label for="nom">Entreprise:</label>
+
+  <input type="text" id="entreprise" name="entreprise" [(ngModel)]="carteVisite.entreprise"><br>
+  <label for="nom">Email:</label>
+
+  <input type="text" id="email" name="email" [(ngModel)]="carteVisite.email"><br>
+  <label for="nom">Telephone:</label>
+
+  <input type="text" id="telephone" name="telephone" [(ngModel)]="carteVisite.telephone"><br>
+
+  <button type="submit">Enregistrer</button>
+  </form>
+
+  <div>
+    <h2>Carte Visite</h2><br>
+    <h3>Nom:</h3><p> {{ carteVisite.nom }}</p><br>
+    <h3>Prenom:</h3> <p>{{ carteVisite.prenom }}</p><br>
+    <h3>Entreprise:</h3><p>{{ carteVisite.entreprise }}</p><br>
+    <h3>Email: </h3><p>{{ carteVisite.email }}</p><br>
+    <h3>Telephone: </h3><p>{{ carteVisite.telephone }}</p><br>
+
+
+    </div>
+
+<h1>{{data}}</h1>
+
+<button (click)="incrementValue()">click fils</button>
